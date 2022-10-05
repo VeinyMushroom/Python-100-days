@@ -2,7 +2,7 @@ import turtle as t
 import random
 import colorgram
 
-colors = colorgram.extract('Super_Mario_64_box_cover.jpg', 10)
+colors = colorgram.extract(f='/Users/eleanorextence/100 Days Files/Day Files/day-18-start/Super_Mario_64_box_cover.jpg', number_of_colors=10)
 
 screen = t.Screen()
 t.colormode(255)
@@ -32,6 +32,7 @@ for x in range(0, 16):
         timmy.left(90)
         timmy.forward(25)
         print(timmy.xcor())
+    
     elif timmy.xcor() == -225:
         print(timmy.xcor(), "right")
         timmy.right(90)
