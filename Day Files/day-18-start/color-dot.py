@@ -1,9 +1,11 @@
+from PIL import Image
 import turtle as t
 import random
-import colorgram
+# import colorgram
+import main 
 
-colors = colorgram.extract(f='/Users/eleanorextence/100 Days Files/Day Files/day-18-start/Super_Mario_64_box_cover.jpg', number_of_colors=10)
 
+colors = main.pix_val
 screen = t.Screen()
 t.colormode(255)
 
@@ -17,9 +19,9 @@ timmy.setposition(-200, -200)
 
 for x in range(0, 16):
 
-    for x in range(0, 16):
-        first_color = colors[random.randrange(0,len(colors))]
-        rgb = first_color.rgb
+    for x in range(0, len(main.pix_val)):
+        first_color = colors
+        rgb = 
         timmy.pencolor((rgb.r, rgb.g, rgb.b))
         timmy.dot(20)
         timmy.penup()
