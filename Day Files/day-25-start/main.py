@@ -4,7 +4,7 @@
 
 import csv
 
-with open("weather_data.csv") as data_file:
+with open("/Users/eleanorextence/Desktop/100 Days Files/Day Files/day-25-start/weather_data.csv") as data_file:
     data = list(csv.reader(data_file))
     temperatures = []
     for row in data[1:]:
